@@ -29,7 +29,7 @@ export const projects = [
     description:
       "A React Native app that adapts music playback in real time using sensor data, with a simple interface showing context and the current track. Built with a Node.js and PostgreSQL backend for context extraction, playlist management and user preferences.",
     image: "",
-    category: "All",
+    category: "Full Stack",
     technologies: ["React Native", "Node.js", "PostgreSQL"],
     metrics: "",
     demoUrl: "",
