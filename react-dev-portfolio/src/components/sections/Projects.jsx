@@ -63,7 +63,119 @@ const Projects = () => {
     "Full Stack": Zap,
   };
 
-  return <div>Projects</div>;
+  return (
+    <section id="projects" className="">
+      <div className="">
+        <div className="" />
+        <div className="" />
+        <div className="" />
+      </div>
+
+      <div className="">
+        <FadeIn delay={0}>
+          <div className="">
+            <div className="">
+              <Briefcase className="" />
+              <span className="">My Work</span>
+            </div>
+            <h2 className="">Featured Projects</h2>
+            <p className="">Showcasing my best work and achivements</p>
+          </div>
+        </FadeIn>
+
+        {/* Category Filter */}
+        <FadeIn delay={100}>
+          <div className="">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => handleCategoryChange(category)}
+                className={`group relative px-6 py-3 rounded-full font-medium translation-all duration-300 ${
+                  activeCategory === category
+                    ? "text-white"
+                    : "text-white/60 hover:text-white"
+                }`}
+              >
+                <div
+                  className={`absolute inset-0 rounded-full transition-all duration-300 ${
+                    activeCategory === category
+                      ? "bg-primary/10 opacity-100"
+                      : "bg-white/5 border border-white/10 group-hover:bg-white/10"
+                  }`}
+                />
+                <div className="">
+                  {React.createElement(categoryIcons[category], {
+                    className: "w-4 h-4",
+                  })}
+                  <span className="">{category}</span>
+                </div>
+
+                {activeCategory === category && <div className="" />}
+              </button>
+            ))}
+          </div>
+        </FadeIn>
+
+        {/* Projects Carousel */}
+        <FadeIn delay={200}>
+          <div className="">
+            <div ref={scrollContainerRef} className="">
+              <div className="">
+                {filteredprojects.map((project, index) => (
+                  <div key={project.id} className="">
+                    <ProjectCard project={project} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            {filteredprojects.length > 3 && (
+              <>
+                <button
+                  onClick={prevSlide}
+                  disabled={currentIndex === 0}
+                  className=""
+                  aria-label="Previous projects"
+                >
+                  <ChevronLeft className="" />
+                </button>
+
+                <button
+                  onClick={nextSlide}
+                  disabled={currentIndex >= filteredprojects.length - 3}
+                  className=""
+                  aria-label="Next projects"
+                >
+                  <ChevronRight className="" />
+                </button>
+              </>
+            )}
+
+            {/* Navigation Dots */}
+            {filteredprojects.length > 3 && (
+              <div className="">
+                {Array.from({
+                  length: Math.max(0, filteredprojects.length - 2),
+                }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => scrollToIndex(index)}
+                    className={`transition-all duration-300 rounded-full ${
+                      index === currentIndex
+                        ? "bg-primary w-6 h-2"
+                        : "bg-white/30 w-2 h-2 hover:bg-white/50"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
 };
 
 export default Projects;
