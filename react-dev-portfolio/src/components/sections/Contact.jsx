@@ -170,21 +170,23 @@ const Contact = () => {
 
           {/* Contact Info */}
           <FadeIn delay={200}>
-            <div className="">
+            <div className="space-y-8">
               <div>
-                <h3 className="">Let's Connect</h3>
+                <h3 className="text-2xl font-semibold text-white mb-4">
+                  Let's Connect
+                </h3>
 
-                <p className="">
+                <p className="text-white/60 leading-relaxed">
                   I'm always open to discussing new projects, creative ideas, or
                   opportunities to be part of your vision. Feel free to reach
                   out!
                 </p>
               </div>
-              <div className="">
-                <div className="">
-                  <div className="">
-                    <div className="">
-                      <Mail className="" />
+              <div className="space-y-4">
+                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
+                      <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div className="">
                       <p className="">Email</p>
