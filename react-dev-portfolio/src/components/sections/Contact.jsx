@@ -200,9 +200,9 @@ const Contact = () => {
                   </div>
                   <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300 pointer-events-none" />
                 </div>
-                <div>
-                  <div>
-                    <div>
+                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
