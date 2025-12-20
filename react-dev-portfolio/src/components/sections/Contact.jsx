@@ -57,7 +57,6 @@ const Contact = () => {
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
-    twitter: Twitter,
   };
 
   return (
@@ -73,17 +72,16 @@ const Contact = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <MessageSquare className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium tracking-wider uppercase">
+              <span className="text-sm text-primary font-medium tracking-wider">
                 Get In Touch
               </span>
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4">
-              Let's Work Together
+              Ready to Hire
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto">
-              Have a project in mind? Let's discuss how we can bring your ideas
-              to life.
+              Available for full-time opportunities and freelance projects.
             </p>
           </div>
         </FadeIn>
@@ -177,9 +175,7 @@ const Contact = () => {
                 </h3>
 
                 <p className="text-white/60 leading-relaxed">
-                  I'm always open to discussing new projects, creative ideas, or
-                  opportunities to be part of your vision. Feel free to reach
-                  out!
+                  Feel free to reach out!
                 </p>
               </div>
               <div className="space-y-4">
