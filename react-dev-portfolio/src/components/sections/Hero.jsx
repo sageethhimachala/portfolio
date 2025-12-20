@@ -43,12 +43,12 @@ function Hero() {
 
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Completed GCE Advanced Level in the Physical Science stream with
-                3 As and an island rank of 186, earning admission to the
-                University of Moratuwa. Currently a final-year BSc Engineering
-                (Hons) undergraduate in Computer Science and Engineering with a
-                CGPA of 3.26, building strong academic and practical expertise
-                in software engineering.
+                I have completed GCE Advanced Level in the Physical Science
+                stream with 3 As and an island rank of 186, earning admission to
+                the University of Moratuwa. I am currently a final-year BSc
+                Engineering (Hons) undergraduate in Computer Science and
+                Engineering with a CGPA of 3.26, building strong academic and
+                practical expertise in software engineering.
               </p>
             </FadeIn>
 

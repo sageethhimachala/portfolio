@@ -83,7 +83,7 @@ const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto">
-              Showcasing my best work and achivements
+              Showcasing my best work and their impact.
             </p>
           </div>
         </FadeIn>

@@ -1,42 +1,43 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    role: "CTO",
-    company: "TechStart Inc.",
-    image: "/testimonials/person1.png",
+    name: "Senzmate Badminton Tournament",
+    role: "March",
+    company: "2025",
+    image: "/testimonials/badminton.jpeg",
     quote:
-      "Outstanding work on our React application. Alex delivered a high-performance, scalable solution that exceeded our expectations.",
+      "The badminton tournament was an energizing break that brought colleagues together through friendly competition and fun",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Product Manager",
-    company: "Digital Innovations",
-    image: "/testimonials/person2.png",
+    name: "Senz Cristmas Party",
+    role: "Dec",
+    company: "2024",
+    image: "/testimonials/christmas.jpeg",
     quote:
-      "Working with Alex was a game-changer for our project. The UI components were beautifully designed and highly functional.",
+      "The Christmas celebration brought everyone together to unwind, celebrate the year's achievements, and enjoy quality time as a team.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Founder",
-    company: "StartupHub",
-    image: "/testimonials/person3.png",
+    name: "Senzmate Cricket Tournament",
+    role: "June",
+    company: "2025",
+    image: "/testimonials/cricket.jpeg",
     quote:
-      "Alex transformed our vision into reality with a stunning, user-friendly interface. The project outcome was exceptional.",
+      "Leading our team in the cricket tournament, coordinating plays and motivating teammates showed me that great results come from clear communication and collective effort.",
     rating: 5,
   },
+
   {
     id: 4,
-    name: "David Thompson",
-    role: "Lead Developer",
-    company: "Innovate Labs",
-    image: "/testimonials/person4.png",
+    name: "New year celebrations",
+    role: "April",
+    company: "2025",
+    image: "/testimonials/new-year.jpg",
     quote:
-      "Excellent collaboration and strong technical expertise. The delivered solution was clean, efficient, and easy to maintain.",
+      "The New Year celebration brought everyone together to reflect on achievements and welcome fresh opportunities ahead.",
     rating: 5,
   },
 ];

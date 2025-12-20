@@ -38,7 +38,7 @@ const Testimonials = () => {
 
   return (
     <section
-      id="testimonials"
+      id="experience"
       className="relative py-20 bg-black overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
@@ -50,16 +50,16 @@ const Testimonials = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <Quote className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium tracking-wider uppercase">
-                Testimonials
+              <span className="text-sm text-primary font-medium tracking-wider">
+                My Experience
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-xl mx-auto">
-              Trusted by forward-thinking teams
+              More Than Just Code
             </h2>
             <p className="text-lg text-white/60 max-w-xl mx-auto">
-              Empowering clients with design-driven, high-quality solutions
-              built for success.
+              Building meaningful connections and growing through teamwork
+              alongside technical development.
             </p>
           </div>
         </FadeIn>
@@ -90,7 +90,7 @@ const Testimonials = () => {
                             />
 
                             {/* Start Badge Overlay */}
-                            <div className="absolute bottom-4 left-4 right-4">
+                            {/* <div className="absolute bottom-4 left-4 right-4">
                               <div className="bg-black/60 rounded-xl p-4 shadow-lg">
                                 <div className="">
                                   <div className="text-2xl font-semibold text-primary mb-1">
@@ -102,7 +102,7 @@ const Testimonials = () => {
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
 
@@ -111,7 +111,7 @@ const Testimonials = () => {
                           <div className="mb-6">
                             <Quote className="w-7 h-7 text-primary mb-4 opacity-50" />
                             <p className="text-lg md:text-xl text-white leading-relaxed">
-                              "{testimonial.quote}"
+                              {testimonial.quote}
                             </p>
                           </div>
 
@@ -125,14 +125,14 @@ const Testimonials = () => {
                               </div>
                             </div>
 
-                            <div className="flex gap-1">
+                            {/* <div className="flex gap-1">
                               {[...Array(testimonial.rating)].map((_, i) => (
                                 <Star
                                   key={i}
                                   className="w-4 h-4 fill-primary text-primary"
                                 />
                               ))}
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
