@@ -123,11 +123,12 @@ const About = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-white mb-2">
-                        expertise
+                        Experience
                       </h3>
                       <p className="text-sm text-white/70 leading-relaxed">
-                        Specialized in building scalabale web applications with
-                        modern technologies and best practices.
+                        Specialized in building scalable, production-ready
+                        systems through academic projects and industry
+                        internship work.
                       </p>
                     </div>
                   </div>
@@ -138,13 +139,14 @@ const About = () => {
                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                   <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
-                    <Sparkles className="w-5 h-5 text-primary" />
+                    <Code2 className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-white mb-2">
-                    Clean Code
+                    Problem Solving
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Writing maintainable, well documented code that scales.
+                    Analytical approach to debugging and optimization, turning
+                    complex challenges into elegant solutions.
                   </p>
                 </div>
               </div>
@@ -153,15 +155,15 @@ const About = () => {
                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                   <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
-                    <Download className="w-5 h-5 text-primary" />
+                    <Code2 className="w-5 h-5 text-primary" />
                   </div>
 
                   <h3 className="text-base font-semibold text-white mb-2">
-                    Performance
+                    Collaboration
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Optimizing for speed and efficiency to deliver fast loading
-                    web experiences.
+                    Effective team player experienced in agile environments,
+                    clear communication, and code reviews.
                   </p>
                 </div>
               </div>
@@ -172,25 +174,23 @@ const About = () => {
                   <div className="grid grid-cols-3 gap-6 text-center">
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
-                        100%
+                        Clean
                       </div>
                       <div className="text-xs text-white/60">
-                        Client Satisfaction
+                        Code Standards
                       </div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
-                        24/7
+                        Responsive
                       </div>
-                      <div className="text-xs text-white/60">
-                        Support Available
-                      </div>
+                      <div className="text-xs text-white/60">Design Focus</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
-                        Fast
+                        Modern
                       </div>
-                      <div className="text-xs text-white/60">Delivery Time</div>
+                      <div className="text-xs text-white/60">Tech Stack </div>
                     </div>
                   </div>
                 </div>

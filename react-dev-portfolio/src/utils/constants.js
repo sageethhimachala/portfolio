@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
     "Full-Stack Developer with strong foundations in frontend, backend, and database systems.",
   resume: "/resume.pdf",
   bio: [
-    "Final-year Computer Science and Engineering undergraduate with hands-on internship experience as a Software Engineer at SenzMate AIoT Intelligence. Experienced in full-stack web development, frontend performance optimization, backend services, and database-driven systems, with a strong focus on clean code and real-world problem solving.",
+    "Final-year Computer Science and Engineering undergraduate with hands-on internship experience as a Software Engineer at SenzMate AIoT Intelligence. Experienced in full-stack web development, frontend performance optimization, backend services, and database-driven systems, with a strong focus on clean code and real-world problem solving. Actively interested in full-stack development, mobile application development, machine learning, DevOps practices, and cloud engineering.",
   ],
 };
 
@@ -27,9 +27,9 @@ export const STATS = [
 ];
 
 export const ABOUT_STATS = [
-  { label: "Happy Clients", value: "45+" },
-  { label: "Code Commits", value: "2.5K+" },
-  { label: "GitHub Stars", value: "500+" },
+  { label: "Months Experience", value: "6+" },
+  { label: "Completed Projects", value: "8+" },
+  { label: "Technologies", value: "12+" },
 ];
 
 export const NAV_LINKS = [
