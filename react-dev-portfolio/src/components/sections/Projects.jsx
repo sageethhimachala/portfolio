@@ -2,13 +2,13 @@ import React, { useState, useRef } from "react";
 import { projects, categories } from "../../data/projects";
 import {
   Briefcase,
-  Sparkles,
   Target,
-  Globe,
-  Palette,
-  Zap,
   ChevronLeft,
   ChevronRight,
+  Layers,
+  Smartphone,
+  Layout,
+  Plug,
 } from "lucide-react";
 import ProjectCard from "../ui/ProjectCard";
 import FadeIn from "../animations/FadeIn";
@@ -58,9 +58,10 @@ const Projects = () => {
   // Category icons mapping
   const categoryIcons = {
     All: Target,
-    "Web Apps": Globe,
-    "UI Components": Palette,
-    "Full Stack": Zap,
+    "Mobile App": Smartphone,
+    Frontend: Layout,
+    "Full Stack": Layers,
+    MCP: Plug,
   };
 
   return (

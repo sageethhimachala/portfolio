@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "NexLib",
     description:
-      "A library management system that enables users to manage books, track borrow or return records, handle user registrations, and maintain real-time availability status.",
+      "Manage books, track borrow or return records, and handle user registrations.",
     image: "/projects/NexLib.png",
     category: "Full Stack",
     technologies: ["React", "Node.js", "Express", "MySQL"],
@@ -14,8 +14,7 @@ export const projects = [
   {
     id: 2,
     title: "Green Cart",
-    description:
-      "A full-stack grocery delivery web application using the MERN stack, integrating Stripe payment gateway for secure online transactions and deployed on Vercel.",
+    description: "Online grocery ordering with payment and delivery tracking.",
     image: "/projects/greencart.jpg",
     category: "Full Stack",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
@@ -27,9 +26,9 @@ export const projects = [
     id: 3,
     title: "SmartSense Music",
     description:
-      "A React Native app that adapts music playback in real time using sensor data, with a simple interface showing context and the current track.",
+      "Plays music based on real-time sensor data and user interests.",
     image: "/projects/smartsense.webp",
-    category: "Full Stack",
+    category: "Mobile App",
     technologies: ["React Native", "Node.js", "Express", "PostgreSQL"],
     metrics: "Context-aware playback",
     demoUrl: "",
@@ -39,10 +38,10 @@ export const projects = [
     id: 4,
     title: "My MCP Server",
     description:
-      "A custom MCP server exposing two tools for answering CV-related queries and sending emails via the Resend API.",
+      "Answers CV related questions and sends emails to gmail address.",
     image: "/projects/my-mcp-server.jpg",
-    category: "Web Apps",
-    technologies: ["TypeScript", "MCP SDK", "Cloudflare", "Resend"],
+    category: "MCP",
+    technologies: ["TypeScript", "MCP SDK", "Cloudflare"],
     metrics: "Automated CV assistance",
     demoUrl: "https://my-mcp-server.sageethhimachala.workers.dev/sse",
     githubUrl: "https://github.com/sageethhimachala/my-mcp-server",
@@ -50,10 +49,9 @@ export const projects = [
   {
     id: 5,
     title: "Weather MCP Server",
-    description:
-      "An MCP server that provides weather information and forecasts through a standardized interface.",
+    description: "Provides weather info and forecasts into LLMs using API.",
     image: "/projects/weather.avif",
-    category: "Web Apps",
+    category: "MCP",
     technologies: ["TypeScript", "MCP SDK", "Cloudflare"],
     metrics: "Real-time weather data",
     demoUrl: "https://weather-mcp.sageethhimachala.workers.dev/",
@@ -63,9 +61,9 @@ export const projects = [
     id: 6,
     title: "Hotel Reservation App",
     description:
-      "A frontend application for hotel reservations featuring an intuitive user interface for browsing hotels, checking availability, and managing bookings.",
+      "A frontend application for hotel reservations featuring an intuitive user interface.",
     image: "/projects/hotel-app.jpg",
-    category: "UI Components",
+    category: "Frontend",
     technologies: ["React", "CSS"],
     metrics: "User-friendly booking UI",
     demoUrl: "",
@@ -73,4 +71,10 @@ export const projects = [
   },
 ];
 
-export const categories = ["All", "Web Apps", "UI Components", "Full Stack"];
+export const categories = [
+  "All",
+  "Mobile App",
+  "Frontend",
+  "Full Stack",
+  "MCP",
+];
