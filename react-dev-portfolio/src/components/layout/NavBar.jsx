@@ -30,7 +30,7 @@ function NavBar() {
       }`}
       style={{ transform: "traanslate3d(0, 0, 0)" }}
     >
-      <div className="max-w-[1320px] mx-auto px-5">
+      <div className="mx-auto px-5 max-w-[1320px]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-4">
