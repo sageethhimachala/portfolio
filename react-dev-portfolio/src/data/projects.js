@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "NexLib",
     description:
-      "Manage books, track borrow or return records, and handle user registrations.",
+      "A web application to manage books, track borrow or return records, and handle user registrations.",
     image: "/projects/NexLib.png",
     category: "Full Stack",
     technologies: ["React", "Node.js", "Express", "MySQL"],
@@ -14,7 +14,8 @@ export const projects = [
   {
     id: 2,
     title: "Green Cart",
-    description: "Online grocery ordering with payment and delivery tracking.",
+    description:
+      "A grocery application which provides online payment with stripe and delivery tracking.",
     image: "/projects/greencart.jpg",
     category: "Full Stack",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
@@ -26,7 +27,7 @@ export const projects = [
     id: 3,
     title: "SmartSense Music",
     description:
-      "Plays music based on real-time sensor data and user interests.",
+      "Mobile App that plays music based on real-time sensor data and user interests.",
     image: "/projects/smartsense.webp",
     category: "Mobile App",
     technologies: ["React Native", "Node.js", "Express", "PostgreSQL"],
@@ -38,7 +39,7 @@ export const projects = [
     id: 4,
     title: "My MCP Server",
     description:
-      "Answers CV related questions and sends emails to gmail address.",
+      "MCP tool that answers CV related questions and sends emails to gmail address.",
     image: "/projects/my-mcp-server.jpg",
     category: "MCP",
     technologies: ["TypeScript", "MCP SDK", "Cloudflare"],
@@ -49,7 +50,8 @@ export const projects = [
   {
     id: 5,
     title: "Weather MCP Server",
-    description: "Provides weather info and forecasts into LLMs using API.",
+    description:
+      "MCP tool that provides weather info and forecasts into LLMs using API.",
     image: "/projects/weather.avif",
     category: "MCP",
     technologies: ["TypeScript", "MCP SDK", "Cloudflare"],
