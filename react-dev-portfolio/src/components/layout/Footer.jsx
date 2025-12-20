@@ -16,8 +16,6 @@ const Footer = () => {
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
-    twitter: Twitter,
-    dribbble: Dribbble,
   };
 
   return (

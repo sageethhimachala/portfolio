@@ -10,8 +10,14 @@ import {
 } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
 import FadeIn from "../animations/FadeIn";
+import emailjs from "@emailjs/browser";
+import { Loader2 } from "lucide-react";
 
 const Contact = () => {
+  // Access environment variables
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +25,7 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState({ type: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -27,8 +34,9 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({ type: "error", message: "Please fill in all fields" });
       return;
@@ -40,18 +48,46 @@ const Contact = () => {
       return;
     }
 
-    setStatus({
-      type: "success",
-      message: "Message sent successfully! I'll get back to you soon.",
-    });
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    try {
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: "Your Name",
+        },
+        EMAILJS_PUBLIC_KEY
+      );
 
-    setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+      if (result.text === "OK") {
+        setStatus({
+          type: "success",
+          message: "Message sent successfully! I'll get back to you soon.",
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+      }
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setStatus({
+        type: "error",
+        message:
+          "Failed to send message. Please try again or email me directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const socialIcons = {
@@ -145,10 +181,20 @@ const Contact = () => {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full px-6 py-3 bg-linear-to-r from-primary/10 to-primary text-white font-medium rounded-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 group"
                 >
-                  <span>Send Message</span>
-                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Send Message</span>
+                      <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                    </>
+                  )}
                 </button>
 
                 {status.message && (
