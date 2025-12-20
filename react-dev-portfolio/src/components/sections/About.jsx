@@ -15,9 +15,9 @@ import {
   SiMysql,
 } from "react-icons/si";
 
-import { ABOUT_STATS, PERSONAL_INFO } from "../../utils/constants";
-import FadeIn from "../animations/FadeIn";
-import RadialBackground from "../backgrounds/RadialBackground";
+import { ABOUT_STATS, PERSONAL_INFO } from "../../utils/constants.js";
+import FadeIn from "../animations/FadeIn.jsx";
+import RadialBackground from "../backgrounds/RadialBackground.jsx";
 
 const About = () => {
   // Skills

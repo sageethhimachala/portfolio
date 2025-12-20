@@ -12,9 +12,9 @@ import {
   SiCplusplus,
 } from "react-icons/si";
 import { PERSONAL_INFO, STATS } from "../../utils/constants";
-import { scrollToSection } from "../../hooks/useScrollSpy";
-import FadeIn from "../animations/FadeIn";
-import RadialBackground from "../backgrounds/RadialBackground";
+import { scrollToSection } from "../../hooks/useScrollSpy.js";
+import FadeIn from "../animations/FadeIn.jsx";
+import RadialBackground from "../backgrounds/RadialBackground.jsx";
 
 function Hero() {
   return (

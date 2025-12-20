@@ -7,11 +7,11 @@ import {
   Twitter,
   Send,
   MessageSquare,
+  Loader2,
 } from "lucide-react";
-import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
-import FadeIn from "../animations/FadeIn";
+import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants.js";
+import FadeIn from "../animations/FadeIn.jsx";
 import emailjs from "@emailjs/browser";
-import { Loader2 } from "lucide-react";
 
 const Contact = () => {
   // Access environment variables

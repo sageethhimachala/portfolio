@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
-import { testimonials } from "../../data/testimonials";
-import FadeIn from "../animations/FadeIn";
+import { testimonials } from "../../data/testimonials.js";
+import FadeIn from "../animations/FadeIn.jsx";
 
 const Testimonials = () => {
   const [currentIndex, setCurentIndex] = useState(0);

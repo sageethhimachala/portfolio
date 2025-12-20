@@ -1,5 +1,5 @@
 import { Code2, Sparkles } from "lucide-react";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../animations/FadeIn.jsx";
 import {
   SiReact,
   SiJavascript,

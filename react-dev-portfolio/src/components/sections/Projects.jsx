@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { projects, categories } from "../../data/projects";
+import { projects, categories } from "../../data/projects.js";
 import {
   Briefcase,
   Target,
@@ -10,8 +10,8 @@ import {
   Layout,
   Plug,
 } from "lucide-react";
-import ProjectCard from "../ui/ProjectCard";
-import FadeIn from "../animations/FadeIn";
+import ProjectCard from "../ui/ProjectCard.jsx";
+import FadeIn from "../animations/FadeIn.jsx";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");

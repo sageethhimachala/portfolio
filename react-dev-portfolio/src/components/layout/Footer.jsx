@@ -8,9 +8,13 @@ import {
   MapPin,
   Heart,
 } from "lucide-react";
-import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from "../../utils/constants";
-import { scrollToSection } from "../../hooks/useScrollSpy";
-import FadeIn from "../animations/FadeIn";
+import {
+  PERSONAL_INFO,
+  SOCIAL_LINKS,
+  NAV_LINKS,
+} from "../../utils/constants.js";
+import { scrollToSection } from "../../hooks/useScrollSpy.js";
+import FadeIn from "../animations/FadeIn.jsx";
 
 const Footer = () => {
   const socialIcons = {
