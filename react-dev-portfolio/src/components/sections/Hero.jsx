@@ -1,11 +1,15 @@
-import { useState } from "react";
-import { ChevronDown, Star } from "lucide-react";
+import { ChevronDown, GraduationCap } from "lucide-react";
 import {
   SiReact,
   SiNextdotjs,
-  SiTailwindcss,
   SiNodedotjs,
+  SiPostgresql,
+  SiSpringboot,
   SiMongodb,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiCplusplus,
 } from "react-icons/si";
 import { PERSONAL_INFO, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
@@ -24,28 +28,31 @@ function Hero() {
           <div className="text-left">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
-                <Star className="w-4 h-4 text-white fill-white" />
+                <GraduationCap className="w-4 h-4 text-white fill-white" />
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
-                  {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
+                  {PERSONAL_INFO.title} | {PERSONAL_INFO.location}
                 </span>
               </div>
             </FadeIn>
 
             <FadeIn delay={100}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
-                React.js Developer Portfolio
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal text-white mb-6 leading-tight">
+                Hi, I'm Sageeth Himachala
               </h1>
             </FadeIn>
 
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Building modern, scalable web applications with React,
-                JavaScript, and cutting-edge technologies. Transforming ideas
-                into exceptional digital experiences.
+                Completed GCE Advanced Level in the Physical Science stream with
+                3 As and an island rank of 186, earning admission to the
+                University of Moratuwa. Currently a final-year BSc Engineering
+                (Hons) undergraduate in Computer Science and Engineering with a
+                CGPA of 3.26, building strong academic and practical expertise
+                in software engineering.
               </p>
             </FadeIn>
 
-            <FadeIn delay={300}>
+            {/* <FadeIn delay={300}>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="inline-flex items-center gap-0 mb-12 group"
@@ -54,7 +61,7 @@ function Hero() {
                   Get in Touch
                 </div>
               </button>
-            </FadeIn>
+            </FadeIn> */}
 
             <FadeIn delay={400}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
@@ -86,7 +93,7 @@ function Hero() {
                 {/* Image Container */}
                 <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
                   <img
-                    src="/developer-portrait.png"
+                    src="/developer-portrait.JPG"
                     alt="Developer at work"
                     className="w-full h-full object-cover"
                   />
@@ -97,11 +104,28 @@ function Hero() {
                   <FadeIn delay={500}>
                     <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiJavascript className="w-full h-full text-primary" />
+                      </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiPython className="w-full h-full text-primary" />
+                      </div>
+
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiTypescript className="w-full h-full text-primary" />
+                      </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiCplusplus className="w-full h-full text-primary" />
+                      </div>
+                      {/* <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiNextdotjs className="w-full h-full text-primary" />
+                      </div>
+
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                         <SiReact className="w-full h-full text-primary" />
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiNextdotjs className="w-full h-full text-primary" />
+                        <SiSpringboot className="w-full h-full text-primary" />
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
@@ -109,12 +133,11 @@ function Hero() {
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiTailwindcss className="w-full h-full text-primary" />
-                      </div>
-
-                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                         <SiMongodb className="w-full h-full text-primary" />
                       </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiPostgresql className="w-full h-full text-primary" />
+                      </div> */}
                     </div>
                   </FadeIn>
                 </div>

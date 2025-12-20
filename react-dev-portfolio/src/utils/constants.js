@@ -1,31 +1,29 @@
 export const PERSONAL_INFO = {
-  name: "Alex Johnson",
-  title: "Software Developer",
-  role: "React Developer & UI/UX Enthusiast",
-  email: "alex@example.com",
-  location: "San Francisco, CA",
+  name: "Sageeth Himachala",
+  title: "CSE Undergraduate",
+  role: "Student",
+  email: "sageethhimachala@gmail.com",
+  location: "University of Moratuwa",
   tagline:
-    "Crafting seamless digital experiences with modern web technologies.",
+    "Full-Stack Developer with strong foundations in frontend, backend, and database systems.",
   resume: "/resume.pdf",
   bio: [
-    "I am a passionate React developer with over 3 years of experience building modern, responsive web applications.",
-    "My expertise spans the entire frontend ecosystem, from React and Next.js to UI/UX best practices.",
-    "When I'm not coding, you'll find me contributing to open-source projects and exploring new technologies.",
+    "Final-year Computer Science and Engineering undergraduate with hands-on internship experience as a Software Engineer at SenzMate AIoT Intelligence. Experienced in full-stack web development, frontend performance optimization, backend services, and database-driven systems, with a strong focus on clean code and real-world problem solving.",
   ],
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
-  twitter: "https://twitter.com/",
-  dribbble: "https://dribbble.com/",
+  github: "https://github.com/sageethhimachala",
+  linkedin: "https://www.linkedin.com/in/sageeth-himachala-7911812aa",
+  twitter: "",
+  dribbble: "",
 };
 
 export const STATS = [
-  { label: "Years Experience", value: "3+" },
-  { label: "Projects Completed", value: "50+" },
-  { label: "Technologies", value: "15+" },
-  { label: "Client Satisfaction", value: "98%" },
+  { label: "CGPA", value: "3.26" },
+  { label: "GCE A/L", value: "3A" },
+  { label: "Island Rank", value: "186" },
+  { label: "Z-Score", value: "2.4724" },
 ];
 
 export const ABOUT_STATS = [

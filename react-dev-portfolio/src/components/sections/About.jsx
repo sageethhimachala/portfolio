@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { Download, Code2, Sparkles } from "lucide-react";
 import {
   SiReact,
+  SiSpringboot,
   SiNextdotjs,
   SiTypescript,
+  SiJavascript,
   SiTailwindcss,
   SiNodedotjs,
+  SiPython,
+  SiCplusplus,
   SiMongodb,
+  SiPostgresql,
+  SiMysql,
 } from "react-icons/si";
+
 import { ABOUT_STATS, PERSONAL_INFO } from "../../utils/constants";
 import FadeIn from "../animations/FadeIn";
 import RadialBackground from "../backgrounds/RadialBackground";
@@ -15,12 +22,27 @@ import RadialBackground from "../backgrounds/RadialBackground";
 const About = () => {
   // Skills
   const skills = [
+    // Frontend Frameworks
     { name: "React.js", icon: SiReact, color: "#61dafb" },
     { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+
+    // Backend
     { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+    { name: "Springboot", icon: SiSpringboot, color: "#6DB33F" },
+
+    // Databases
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+
+    // Languages
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    { name: "Python", icon: SiPython, color: "#3776AB" },
+    { name: "C++", icon: SiCplusplus, color: "#00599C" },
+
+    // Styling
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
   ];
 
   return (
@@ -35,19 +57,18 @@ const About = () => {
             <div className="flex flex-col gap-8">
               <FadeIn delay={60}>
                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
-                  <Code2 className="w-4 h-4 text-primary" />
-                  <span className="text-sm text-primary font-medium">
-                    Full Stack Developer
-                  </span>
                   <Sparkles className="w-4 h-4 text-primary" />
+                  <span className="text-sm text-primary font-medium">
+                    About
+                  </span>
                 </div>
               </FadeIn>
 
-              <FadeIn delay={100}>
+              {/* <FadeIn delay={100}>
                 <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                  Crafting Digital Experiences That Matter
+                  Software Engineer
                 </h2>
-              </FadeIn>
+              </FadeIn> */}
 
               <FadeIn delay={200}>
                 <div className="flex flex-col gap-4">
