@@ -1,28 +1,193 @@
-import React from "react";
-import { skills } from "../../data/skills";
-import * as Icons from "lucide-react";
+import { Code2, Sparkles } from "lucide-react";
 import FadeIn from "../animations/FadeIn";
+import {
+  SiReact,
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiGithub,
+  SiDocker,
+  SiPython,
+  SiFigma,
+  SiMysql,
+  SiCplusplus,
+  SiSpringboot,
+  SiPostgresql,
+  SiMongodb,
+  SiVercel,
+  SiCloudflare,
+  SiWordpress,
+  SiSupabase,
+  SiJira,
+  SiClickup,
+  SiFastapi,
+} from "react-icons/si";
 
 const Skills = () => {
   // Categorize skills
   const skillCategories = {
-    "Frontend Development": [
-      skills.find((s) => s.name === "React.js"),
-      skills.find((s) => s.name === "JavaScript"),
-      skills.find((s) => s.name === "TypeScript"),
-      skills.find((s) => s.name === "Next.js"),
-      skills.find((s) => s.name === "Tailwind CSS"),
-      skills.find((s) => s.name === "Redux"),
+    "Languages and Frameworks": [
+      {
+        id: 1,
+        name: "React.js",
+        icon: SiReact,
+        level: "Expert",
+        experience: "2+ years",
+      },
+      {
+        id: 2,
+        name: "Next.js",
+        icon: SiNextdotjs,
+        level: "Advanced",
+        experience: "1+ years",
+      },
+
+      {
+        id: 3,
+        name: "Node.js",
+        icon: SiNodedotjs,
+        level: "Advanced",
+        experience: "2+ years",
+      },
+      {
+        id: 4,
+        name: "FastAPI",
+        icon: SiFastapi,
+        level: "Intermediate",
+        experience: "1+ years",
+      },
+      {
+        id: 5,
+        name: "Springboot",
+        icon: SiSpringboot,
+        level: "Intermediate",
+        experience: "1+ years",
+      },
+      {
+        id: 6,
+        name: "JavaScript",
+        icon: SiJavascript,
+        level: "Expert",
+        experience: "2+ years",
+      },
+      {
+        id: 7,
+        name: "TypeScript",
+        icon: SiTypescript,
+        level: "Advanced",
+        experience: "1+ years",
+      },
+      {
+        id: 8,
+        name: "Python",
+        icon: SiPython,
+        level: "Advanced",
+        experience: "4+ years",
+      },
+      {
+        id: 9,
+        name: "C++",
+        icon: SiCplusplus,
+        level: "Intermediate",
+        experience: "2+ years",
+      },
+      {
+        id: 10,
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+        level: "Expert",
+        experience: "2+ years",
+      },
     ].filter(Boolean),
-    "Backend & APIs": [
-      skills.find((s) => s.name === "Node.js"),
-      skills.find((s) => s.name === "REST APIs"),
+    Databases: [
+      {
+        id: 11,
+        name: "MySQL",
+        icon: SiMysql,
+        level: "Expert",
+        experience: "4+ years",
+      },
+      {
+        id: 12,
+        name: "MongoDB",
+        icon: SiMongodb,
+        level: "Advanced",
+        experience: "2+ years",
+      },
+      {
+        id: 13,
+        name: "PostgreSQL",
+        icon: SiPostgresql,
+        level: "Advanced",
+        experience: "1+ years",
+      },
     ].filter(Boolean),
-    "Tools & Others": [
-      skills.find((s) => s.name === "Git & GitHub"),
-      skills.find((s) => s.name === "Responsive Design"),
-      skills.find((s) => s.name === "Figma"),
-      skills.find((s) => s.name === "Vite"),
+    Tools: [
+      {
+        id: 14,
+        name: "GitHub",
+        icon: SiGithub,
+        level: "Expert",
+        experience: "2+ years",
+      },
+      {
+        id: 15,
+        name: "Docker",
+        icon: SiDocker,
+        level: "Intermediate",
+        experience: "1+ years",
+      },
+      {
+        id: 16,
+        name: "Supabase",
+        icon: SiSupabase,
+        level: "Intermediate",
+        experience: "1+ years",
+      },
+      {
+        id: 17,
+        name: "jira",
+        icon: SiJira,
+        level: "Expert",
+        experience: "1+ years",
+      },
+      {
+        id: 18,
+        name: "ClickUp",
+        icon: SiClickup,
+        level: "Intermediate",
+        experience: "1+ years",
+      },
+      {
+        id: 19,
+        name: "Wordpress",
+        icon: SiWordpress,
+        level: "Advanced",
+        experience: "1+ years",
+      },
+      {
+        id: 20,
+        name: "Figma",
+        icon: SiFigma,
+        level: "Advanced",
+        experience: "2+ years",
+      },
+      {
+        id: 21,
+        name: "Vercel",
+        icon: SiVercel,
+        level: "Advanced",
+        experience: "1+ years",
+      },
+      {
+        id: 22,
+        name: "Cloudflare",
+        icon: SiCloudflare,
+        level: "Advanced",
+        experience: "1+ years",
+      },
     ].filter(Boolean),
   };
 
@@ -58,7 +223,7 @@ const Skills = () => {
         <FadeIn delay={100}>
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
-              <Icons.Sparkles className="w-4 h-4 text-primary" />
+              <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm text-primary font-medium">
                 My Expertise
               </span>
@@ -90,7 +255,7 @@ const Skills = () => {
                   {/* Skills List */}
                   <div className="space-y-5">
                     {categorySkills.map((skill, skillIndex) => {
-                      const IconComponent = Icons[skill.icon] || Icons.Code2;
+                      const IconComponent = skill.icon || Code2;
                       const proficiency = getProficencyLevel(skill.level);
 
                       return (

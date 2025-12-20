@@ -6,10 +6,10 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiJavascript,
-  SiTailwindcss,
+  SiCplusplus,
   SiNodedotjs,
   SiPython,
-  SiCplusplus,
+  SiFastapi,
   SiMongodb,
   SiPostgresql,
   SiMysql,
@@ -29,6 +29,7 @@ const About = () => {
     // Backend
     { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
     { name: "Springboot", icon: SiSpringboot, color: "#6DB33F" },
+    { name: "FastAPI", icon: SiFastapi, color: "#009688" },
 
     // Databases
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
@@ -40,9 +41,6 @@ const About = () => {
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { name: "Python", icon: SiPython, color: "#3776AB" },
     { name: "C++", icon: SiCplusplus, color: "#00599C" },
-
-    // Styling
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
   ];
 
   return (
@@ -207,7 +205,7 @@ const About = () => {
                 Tech Stack & Expertise
               </h3>
               <p className="text-sm text-white/60">
-                Technologies I work with to build amazing products.
+                Technologies I work with to build modern software solutions.
               </p>
             </div>
 

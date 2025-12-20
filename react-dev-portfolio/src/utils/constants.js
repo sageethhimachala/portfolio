@@ -29,7 +29,7 @@ export const STATS = [
 export const ABOUT_STATS = [
   { label: "Months Experience", value: "6+" },
   { label: "Completed Projects", value: "8+" },
-  { label: "Technologies", value: "12+" },
+  { label: "Technologies", value: "22+" },
 ];
 
 export const NAV_LINKS = [
