@@ -180,15 +180,15 @@ const About = () => {
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
-                        Responsive
+                        100%
                       </div>
-                      <div className="text-xs text-white/60">Design Focus</div>
+                      <div className="text-xs text-white/60">Commitment</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
                         Modern
                       </div>
-                      <div className="text-xs text-white/60">Tech Stack </div>
+                      <div className="text-xs text-white/60">Tech Stack</div>
                     </div>
                   </div>
                 </div>
