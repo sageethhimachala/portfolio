@@ -174,9 +174,7 @@ const About = () => {
                       <div className="text-2xl font-bold text-primary mb-1">
                         Clean
                       </div>
-                      <div className="text-xs text-white/60">
-                        Code Standards
-                      </div>
+                      <div className="text-xs text-white/60">Code</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">
