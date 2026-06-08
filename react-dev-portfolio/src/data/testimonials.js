@@ -32,12 +32,12 @@ export const testimonials = [
 
   {
     id: 4,
-    name: "New year celebrations",
+    name: "FYP Showcase",
     role: "April",
-    company: "2025",
-    image: "/testimonials/new-year.jpg",
+    company: "2026",
+    image: "/testimonials/fyp.jpeg",
     quote:
-      "The New Year celebration brought everyone together to reflect on achievements and welcome fresh opportunities ahead.",
+      "The Final Year Project journey brought our team together to transform ideas into innovation and turn challenges into meaningful achievements.",
     rating: 5,
   },
 ];
